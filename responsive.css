@@ -1,0 +1,171 @@
+@media (max-width:1100px) {
+    .segura {
+        top: -70px;
+    }
+
+}
+
+/* 890px */
+@media (max-width:890px) {
+    .segura {
+        top: -120px;
+    }
+
+    .segura h1 {
+        font-size: 42px;
+        top: 38%;
+    }
+
+    .segura h1::after {
+        background-size: 190px;
+        margin: 10px auto;
+
+    }
+
+    .segura h2 {
+        top: 52%;
+        font-size: 18px;
+    }
+
+}
+
+/* 720px */
+@media (max-width:720px) {
+    .segura {
+        top: -150px;
+    }
+
+    .segura h1 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+
+    .segura h2 {
+        top: 53%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .menu {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .menu ul a {
+        font-size: 16px;
+    }
+
+    .menu ul li:nth-child(1) {
+        flex: 0;
+    }
+
+    .menu ul li:nth-child(2) {
+        flex: 0;
+    }
+
+    .menu ul li:nth-child(3) {
+        flex: 0;
+    }
+
+    .menu ul li:before {
+        content: "";
+        width: 45px;
+        height: 20px;
+        background: currentColor;
+        border-radius: 6px;
+        display: inline-block;
+        position: relative;
+        left: -15px;
+        z-index: -1;
+        bottom: -30px;
+    }
+
+    /* keyframes animação menu mobile */
+
+    @keyframes sheen {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -100px;
+            width: 48px;
+            top: 22px;
+            bottom: 0;
+        }
+    }
+
+
+    @keyframes sheen2 {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -100px;
+            width: 48px;
+            top: 22px;
+            bottom: 0;
+        }
+    }
+
+    @keyframes sheen3 {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -82px;
+            width: 40px;
+            top: 22px;
+            bottom: 0px;
+        }
+    }
+
+    .wave1,
+    .wave2,
+    .wave3,
+    .wave4,
+    .wave5,
+    .wave6,
+    .wave7,
+    .wave8 {
+        animation: nuvem 2.5s ease-in-out alternate infinite;
+    }
+
+}
+
+/* 420px */
+@media (max-width:420px) {
+    .segura {
+        top: -150px;
+    }
+
+    .segura h1 {
+        font-size: 22px;
+        top: 39%;
+        margin-top: 40px;
+    }
+
+    .segura h1::after {
+        background-size: 160px;
+        margin: 5px auto;
+
+    }
+
+    .segura h2 {
+        top: 53%;
+        font-size: 14px;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+}
