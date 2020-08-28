@@ -269,7 +269,7 @@ body {
 .segura h1::after {
     content: "";
     display: block;
-    background: url("/separador.svg") no-repeat;
+    background: url("separador.svg") no-repeat;
     background-size: 390px;
     background-position: center;
     height: 30px;
