@@ -334,18 +334,17 @@ body {
     z-index: -99;
     animation: gota 4s ease-in infinite;
     opacity: 0%;
-
 }
 
 
 @keyframes gota {
     from {
         transform: translateY(0vh);
-        opacity: 30%;
+        opacity: 0%;
     }
 
     to {
-        opacity: 90%;
+        opacity: 100%;
         transform: translateY(100vh);
     }
 
