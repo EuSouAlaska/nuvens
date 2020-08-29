@@ -195,6 +195,7 @@
 
     /* pra alinhar o texto por causa do before */
     #portfolio h2 {
+        margin-left: -40px;
         font-size: 22px;
     }
 
