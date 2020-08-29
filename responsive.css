@@ -69,6 +69,11 @@
 }
 
 @media (max-width:550px) {
+    #portfolio h2:before {
+        width: 70px;
+        left: 55px;
+    }
+
     .scroll {
         margin-top: -380px;
     }
@@ -122,6 +127,7 @@
 
     .menu ul li:nth-child(2):before {
         left: -10px;
+
     }
 
     /* keyframes animação menu mobile */
@@ -133,8 +139,8 @@
         100% {
             transform: scale(2) rotate(0) translate(100%, 0px);
             right: 0px;
-            left: -100px;
-            width: 48px;
+            left: -72px;
+            width: 35px;
             top: 25px;
             bottom: 0;
         }
@@ -189,12 +195,15 @@
 
     /* pra alinhar o texto por causa do before */
     #portfolio h2 {
-        margin-right: 20px;
+        margin-left: -40px;
+        font-size: 22px;
     }
 
     .segura {
         top: -150px;
     }
+
+
 
     .segura h1 {
         font-size: 22px;
@@ -214,6 +223,10 @@
         max-width: 200px;
         display: block;
         margin: 0 auto;
+    }
+
+    .menu ul {
+        margin-left: 20px;
     }
 
     .menu ul li:before {
