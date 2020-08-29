@@ -141,7 +141,7 @@
             right: 0px;
             left: -72px;
             width: 35px;
-            top: 25px;
+            top: 26px;
             bottom: 0;
         }
     }
@@ -172,7 +172,7 @@
             right: 0px;
             left: -82px;
             width: 40px;
-            top: 22px;
+            top: 26px;
             bottom: 0px;
         }
     }
@@ -195,7 +195,6 @@
 
     /* pra alinhar o texto por causa do before */
     #portfolio h2 {
-        margin-left: -15px;
         font-size: 22px;
     }
 
