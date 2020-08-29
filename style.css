@@ -70,20 +70,29 @@ ul {
     font-weight: normal;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-
-/* menu */
 body {
     background-color: #F0F0ED;
 }
+
+/* menu */
+
 
 .menu {
     background: #F0F0ED;
@@ -91,10 +100,10 @@ body {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
     position: fixed;
     width: 100vw;
+    z-index: 10;
 }
 
 .menu ul {
-    z-index: 2;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -233,7 +242,7 @@ body {
 /* titulo subtitulo e espaçador */
 .segura {
     position: relative;
-    top: -30px;
+    top: -20px;
     z-index: -20;
     overflow: hidden;
     left: 0;
@@ -253,6 +262,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
+    white-space: nowrap
 }
 
 .segura h2 {
@@ -266,6 +276,7 @@ body {
     font-weight: normal;
     font-size: 22px;
     color: #323232;
+
 }
 
 
@@ -336,7 +347,6 @@ body {
     opacity: 0%;
 }
 
-
 @keyframes gota {
     from {
         transform: translateY(0vh);
@@ -347,5 +357,68 @@ body {
         opacity: 100%;
         transform: translateY(100vh);
     }
+}
 
+/* portfoilio */
+.scroll {
+    scroll-behavior: smooth;
+    margin-top: -40px;
+}
+
+#portfolio h2 {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: #252525;
+    text-align: center;
+
+}
+
+#portfolio h2:before {
+    content: "";
+    width: 50px;
+    height: 20px;
+    background: #FDFFB6;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    z-index: -1;
+    bottom: -10px;
+}
+
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wrap div {
+    flex: 1 1 calc(33.333% - 10px);
+    margin-left: 10px;
+}
+
+.wrap img {
+    margin: 0 auto;
+    z-index: -99;
+    transition: transform 0.4s ease-in-out;
+}
+
+.wrap img:hover {
+    transform: scale(1.1);
+}
+
+
+.wrap p {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #3D3D3D;
 }

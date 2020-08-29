@@ -3,10 +3,18 @@
         top: -70px;
     }
 
+    .scroll {
+        margin-top: -150px;
+    }
+
 }
 
 /* 890px */
 @media (max-width:890px) {
+    .scroll {
+        margin-top: -250px;
+    }
+
     .segura {
         top: -120px;
     }
@@ -31,6 +39,14 @@
 
 /* 720px */
 @media (max-width:720px) {
+    .scroll {
+        margin-top: -320px;
+    }
+
+    #portfolio h2 {
+        font-size: 28px;
+    }
+
     .segura {
         top: -150px;
     }
@@ -45,9 +61,26 @@
         font-size: 16px;
     }
 
+    .wrap div {
+        flex: 1 1 calc(50% - 10px);
+        margin-left: 10px;
+    }
+
 }
 
 @media (max-width:550px) {
+    .scroll {
+        margin-top: -380px;
+    }
+
+    #portfolio h2 {
+        font-size: 24px;
+    }
+
+    .wrap p {
+        font-size: 14px;
+    }
+
     .menu {
         padding-top: 0px;
         padding-bottom: 20px;
@@ -153,6 +186,12 @@
 
 /* 420px */
 @media (max-width:420px) {
+
+    /* pra alinhar o texto por causa do before */
+    #portfolio h2 {
+        margin-right: 20px;
+    }
+
     .segura {
         top: -150px;
     }
