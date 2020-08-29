@@ -82,6 +82,15 @@
         bottom: -30px;
     }
 
+    .menu ul li:nth-child(1):before {
+        left: -25px;
+        background: #FFC6FF;
+    }
+
+    .menu ul li:nth-child(2):before {
+        left: -10px;
+    }
+
     /* keyframes animação menu mobile */
 
     @keyframes sheen {
