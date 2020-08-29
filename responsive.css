@@ -155,7 +155,7 @@
         100% {
             transform: scale(2) rotate(0) translate(100%, 0px);
             right: 0px;
-            left: -100px;
+            left: -98px;
             width: 48px;
             top: 25px;
             bottom: 0;
@@ -195,7 +195,7 @@
 
     /* pra alinhar o texto por causa do before */
     #portfolio h2 {
-        margin-left: -40px;
+        margin-left: -15px;
         font-size: 22px;
     }
 
@@ -241,15 +241,5 @@
         z-index: -1;
         bottom: -31px;
     }
-
-    .menu ul li:nth-child(1):before {
-        left: -25px;
-        background: #FFC6FF;
-    }
-
-    .menu ul li:nth-child(2):before {
-        left: -10px;
-    }
-
 
 }
