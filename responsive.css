@@ -79,7 +79,7 @@
         position: relative;
         left: -15px;
         z-index: -1;
-        bottom: -30px;
+        bottom: -31px;
     }
 
     .menu ul li:nth-child(1):before {
@@ -92,7 +92,6 @@
     }
 
     /* keyframes animação menu mobile */
-
     @keyframes sheen {
         0% {
             transform: scale(1) rotate(0) translate(0px, 0px);
@@ -103,7 +102,7 @@
             right: 0px;
             left: -100px;
             width: 48px;
-            top: 22px;
+            top: 25px;
             bottom: 0;
         }
     }
@@ -119,7 +118,7 @@
             right: 0px;
             left: -100px;
             width: 48px;
-            top: 22px;
+            top: 25px;
             bottom: 0;
         }
     }
@@ -176,5 +175,85 @@
         max-width: 200px;
         display: block;
         margin: 0 auto;
+    }
+
+    .menu ul li:before {
+        content: "";
+        width: 45px;
+        height: 20px;
+        background: currentColor;
+        border-radius: 6px;
+        display: inline-block;
+        position: relative;
+        left: -15px;
+        z-index: -1;
+        bottom: -31px;
+    }
+
+    .menu ul li:nth-child(1):before {
+        left: -25px;
+        background: #FFC6FF;
+    }
+
+    .menu ul li:nth-child(2):before {
+        left: -10px;
+    }
+
+    /* keyframes animação menu mobile */
+    @keyframes sheen {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -100px;
+            width: 48px;
+            top: 25px;
+            bottom: 0;
+        }
+    }
+
+
+    @keyframes sheen2 {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -100px;
+            width: 48px;
+            top: 25px;
+            bottom: 0;
+        }
+    }
+
+    @keyframes sheen3 {
+        0% {
+            transform: scale(1) rotate(0) translate(0px, 0px);
+        }
+
+        100% {
+            transform: scale(2) rotate(0) translate(100%, 0px);
+            right: 0px;
+            left: -84px;
+            width: 40px;
+            top: 25px;
+            bottom: 0px;
+        }
+    }
+
+    .wave1,
+    .wave2,
+    .wave3,
+    .wave4,
+    .wave5,
+    .wave6,
+    .wave7,
+    .wave8 {
+        animation: nuvem 2.5s ease-in-out alternate infinite;
     }
 }
