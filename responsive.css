@@ -69,6 +69,12 @@
 }
 
 @media (max-width:550px) {
+    .sub {
+        display: flex;
+        justify-content: center;
+        margin-left: -40px;
+    }
+
     #portfolio h2:before {
         width: 70px;
         left: 55px;
@@ -84,6 +90,7 @@
 
     .wrap p {
         font-size: 14px;
+
     }
 
     .menu {
@@ -194,10 +201,15 @@
 @media (max-width:420px) {
 
     /* pra alinhar o texto por causa do before */
+
+
     #portfolio h2 {
-        margin-left: -40px;
         font-size: 22px;
+        font-weight: normal;
+        flex: 0 0 auto;
     }
+
+
 
     .segura {
         top: -150px;
