@@ -441,14 +441,17 @@ body {
     display: block;
     margin-top: 60px;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 .segura-content {
     position: absolute;
-    top: 0px;
     width: 100%;
+    top: 0px;
     background: linear-gradient(94.25deg, #bdb2ff 5.09%, #9bf6ff 183.44%);
     z-index: -3;
+    padding-top: 60px;
+
 }
 
 .segura-content h2 {
@@ -491,12 +494,7 @@ body {
     margin-left: 20px;
 }
 
-.baixobg {
-    overflow: hidden;
-    display: block;
-    max-width: 100%;
-    height: 100%;
-}
+
 
 /* img sbre */
 .wrap-sobre {
@@ -532,6 +530,7 @@ body {
 .wrap-avatar {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 #avatar {
@@ -539,4 +538,46 @@ body {
     margin-right: 40px;
     display: block;
     order: 2;
+}
+
+/* shape baixo */
+.custom-shape-divider-bottom-1598899301 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1598899301 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1598899301 .shape-fill {
+    fill: #E5E5E5;
+}
+
+/*  cima */
+.custom-shape-divider-top-1598899692 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1598899692 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1598899692 .shape-fill {
+    fill: #E5E5E5;
 }

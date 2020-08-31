@@ -129,6 +129,18 @@
 
 @media (max-width:550px) {
 
+    /* shape baixo */
+    .custom-shape-divider-bottom-1598899301 svg {
+        height: 50px;
+    }
+
+    /* shape cima */
+    .custom-shape-divider-top-1598899692 svg {
+
+        height: 50px;
+    }
+
+
 
     #portfolio h2:before {
         width: 70px;
@@ -253,7 +265,16 @@
 /* 420px */
 @media (max-width:420px) {
 
+    /* shape baixo */
+    .custom-shape-divider-bottom-1598899301 svg {
+        height: 30px;
+    }
 
+    /* shape cima */
+    .custom-shape-divider-top-1598899692 svg {
+
+        height: 30px;
+    }
 
 
     .sub {
