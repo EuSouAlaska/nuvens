@@ -283,6 +283,7 @@ body {
     max-width: 100%;
     left: 0px;
     top: 0;
+    right: 0;
 }
 
 .wave1,
@@ -308,7 +309,6 @@ body {
 }
 
 .box {
-    height: 900px;
     z-index: -100;
 }
 
