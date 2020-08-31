@@ -309,6 +309,7 @@ body {
 }
 
 .box {
+    height: 900px;
     z-index: -100;
 }
 
