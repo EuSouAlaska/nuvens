@@ -90,7 +90,6 @@ img {
 body {
     -webkit-font-smoothing: antialiased;
     font: 100%;
-    height: 3300px;
     background: #e5e5e5;
 }
 
@@ -233,12 +232,14 @@ body {
 /* titulo subtitulo e espaçador */
 .segura {
     position: relative;
-    top: -20px;
+    top: -10px;
     z-index: -20;
     overflow: hidden;
     left: 0;
     right: 0;
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .segura h1 {
@@ -318,17 +319,18 @@ body {
 .gota1 {
     position: absolute;
     top: 50%;
-    z-index: -99;
-    animation: gota 5s linear infinite;
+    animation: gota 10s linear infinite;
     opacity: 20%;
     left: 17%;
+    z-index: -99;
+
 }
 
 .gota2 {
     position: absolute;
     top: 50%;
     z-index: -99;
-    animation: gota 5s 2s linear infinite;
+    animation: gota 10s 2s linear infinite;
     left: 34%;
     opacity: 20%;
 }
@@ -337,7 +339,7 @@ body {
     position: absolute;
     top: 50%;
     z-index: -99;
-    animation: gota 5s 1s linear infinite;
+    animation: gota 10s 1s linear infinite;
     left: 52%;
     opacity: 20%;
 }
@@ -346,7 +348,7 @@ body {
     position: absolute;
     top: 50%;
     z-index: -99;
-    animation: gota 5s 4s linear infinite;
+    animation: gota 10s 4s linear infinite;
     left: 72%;
     opacity: 20%;
 }
@@ -355,9 +357,9 @@ body {
     position: absolute;
     top: 50%;
     z-index: -99;
-    animation: gota 5s 3s linear infinite;
+    animation: gota 10s 3s linear infinite;
     left: 22%;
-    opacity: 20%;
+    opacity: 40%;
 }
 
 @keyframes gota {
@@ -367,7 +369,7 @@ body {
 
     to {
         opacity: 100%;
-        transform: translateY(1000px);
+        transform: translateY();
         /* MUDAR O TAMANHO DA TELA DE ACORDO COM O TEMPO */
     }
 }
@@ -439,18 +441,18 @@ body {
 #sobre {
     position: relative;
     display: block;
-    margin-top: 60px;
+    margin-top: 80px;
     scroll-behavior: smooth;
     width: 100%;
 }
 
 .segura-content {
-    position: absolute;
     width: 100%;
     top: 0px;
     background: linear-gradient(94.25deg, #bdb2ff 5.09%, #9bf6ff 183.44%);
     z-index: -3;
-    padding-top: 60px;
+    padding-top: 5.5em;
+    position: relative;
 
 }
 
@@ -569,7 +571,9 @@ body {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+
 }
+
 
 .custom-shape-divider-top-1598899692 svg {
     position: relative;
@@ -580,4 +584,101 @@ body {
 
 .custom-shape-divider-top-1598899692 .shape-fill {
     fill: #E5E5E5;
+}
+
+/* contato */
+
+
+#contato h2 {
+    text-align: center;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: #3D3D3D;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#contato ul {
+    display: flex;
+    justify-content: center;
+}
+
+#contato li {
+    margin-left: 40px;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+#contato li:hover {
+    transform: scale(1.2);
+}
+
+#contato li:nth-child(1) {
+    margin-left: 0px;
+
+}
+
+
+#contato h2:before {
+    content: "";
+    width: 50px;
+    height: 20px;
+    background: #FFD6A5;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    z-index: -1;
+    bottom: -8px;
+}
+
+/* footer */
+
+
+.custom-shape-divider-top-1598902789 {
+    margin-top: 90px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.custom-shape-divider-top-1598902789 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 66px;
+    animation: moveWave 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes moveWave {
+    from {
+        transform: translateX(-80px);
+    }
+}
+
+.custom-shape-divider-top-1598902789 .shape-fill {
+    fill: #E5E5E5;
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(92.79deg, #A0C4FF 39.66%, rgba(160, 196, 255, 0) 185.71%);
+}
+
+footer h3 {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #3D3D3D;
+    padding-top: 80px;
+}
+
+.arco {
+    width: 100%;
+    margin-top: -5px;
 }

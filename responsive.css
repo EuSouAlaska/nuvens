@@ -39,6 +39,40 @@
 
 /* 720px */
 @media (max-width:720px) {
+    #contato h2 {
+        text-align: center;
+        font-family: Inconsolata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #3D3D3D;
+        margin-left: -40px;
+    }
+
+    #contato ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contato li {
+        width: 60px;
+    }
+
+
+
+
+    #contato h2:before {
+        content: "";
+        width: 50px;
+        height: 20px;
+        background: #FFD6A5;
+        border-radius: 6px;
+        display: inline-block;
+        position: relative;
+        left: 40px;
+        z-index: -1;
+        bottom: -8px;
+    }
 
 
     .wrap-sobre {
@@ -75,7 +109,7 @@
         font-family: Inconsolata;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
+        font-size: 28px;
         color: #3d3d3d;
         text-align: center;
         margin: 60px 0 60px -30px;
@@ -101,7 +135,7 @@
     }
 
     #portfolio h2 {
-        font-size: 32px;
+        font-size: 28px;
         margin-left: -40px;
 
     }
@@ -260,6 +294,7 @@
         animation: nuvem 2.5s ease-in-out alternate infinite;
     }
 
+
 }
 
 /* 420px */
@@ -301,6 +336,7 @@
     .segura h1::after {
         background-size: 160px;
         margin: 5px auto;
+
 
     }
 
